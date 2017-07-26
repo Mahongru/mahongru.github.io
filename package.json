@@ -1,0 +1,32 @@
+{
+  "name": "mahongru.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "HelloWorld.js",
+  "dependencies": {
+    "eslint": "^4.3.0"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mahongru/mahongru.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mahongru/mahongru.github.io/issues"
+  },
+  "homepage": "https://github.com/Mahongru/mahongru.github.io#readme"
+}
