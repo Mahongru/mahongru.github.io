@@ -80,7 +80,7 @@ main #mobileContact {
   bottom: 0;
   left: 0;
   width: 290px;
-  padding: 160px 10px 0 25px;
+  padding: 250px 10px 0 25px;
   font-size: 12px;
   background: #fff;
   z-index: 1;
@@ -121,6 +121,25 @@ main #sidebar h3 {
   line-height: 35px;
 }
 #sidebar h3:after {
+  content: "";
+  margin-left: 10px;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+  overflow: hidden;
+  justify-content: space-around;
+}
+
+#sidebar h1 {
+  font-size: 130%;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: uppercase;
+  line-height: 35px;
+}
+#sidebar h1:after {
   content: "";
   margin-left: 10px;
   display: inline-block;
