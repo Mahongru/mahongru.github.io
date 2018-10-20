@@ -1,11 +1,11 @@
 {
-  "main.js": "/mahongru.github.io/static/js/main.07b74695.chunk.js",
-  "main.js.map": "/mahongru.github.io/static/js/main.07b74695.chunk.js.map",
-  "static/js/1.b99f27b3.chunk.js": "/mahongru.github.io/static/js/1.b99f27b3.chunk.js",
-  "static/js/1.b99f27b3.chunk.js.map": "/mahongru.github.io/static/js/1.b99f27b3.chunk.js.map",
-  "runtime~main.js": "/mahongru.github.io/static/js/runtime~main.348c6081.js",
-  "runtime~main.js.map": "/mahongru.github.io/static/js/runtime~main.348c6081.js.map",
-  "index.html": "/mahongru.github.io/index.html",
-  "precache-manifest.9328693b5afda7c3c7dca921a26a6410.js": "/mahongru.github.io/precache-manifest.9328693b5afda7c3c7dca921a26a6410.js",
-  "service-worker.js": "/mahongru.github.io/service-worker.js"
+  "main.js": "/static/js/main.07b74695.chunk.js",
+  "main.js.map": "/static/js/main.07b74695.chunk.js.map",
+  "static/js/1.b99f27b3.chunk.js": "/static/js/1.b99f27b3.chunk.js",
+  "static/js/1.b99f27b3.chunk.js.map": "/static/js/1.b99f27b3.chunk.js.map",
+  "runtime~main.js": "/static/js/runtime~main.229c360f.js",
+  "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
+  "index.html": "/index.html",
+  "precache-manifest.f128925fa2766a844ecdada19a53016f.js": "/precache-manifest.f128925fa2766a844ecdada19a53016f.js",
+  "service-worker.js": "/service-worker.js"
 }
