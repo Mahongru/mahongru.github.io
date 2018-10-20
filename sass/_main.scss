@@ -1,0 +1,75 @@
+$green: darken(#1c9963, 5%);
+$blue: darken(#219fd4, 10%);
+
+main {
+  font-family: pt sans, sans-serif;
+  font-size: 15px;
+  color: #444;
+  margin: 30px 150px 50px 320px;
+  text-align: left;
+  line-height: 20px;
+  a {
+    color: #000;
+    text-decoration: none;
+    &:hover {
+      color: $green;
+      text-decoration: none;
+    }
+  }
+  h1 {
+    font-weight: bolder;
+    font-size: 1.3em;
+    text-align: left;
+    overflow: hidden;
+    white-space: nowrap;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    line-height: 35px;
+    color: #000;
+    &:after {
+      content: "";
+      margin-left: 10px;
+      display: inline-block;
+      width: 100%;
+      vertical-align: middle;
+      border-bottom: 1px solid;
+      overflow: hidden;
+      justify-content: space-around;
+    }
+  }
+  h2 {
+    color: #000;
+    font-size: 2em;
+    font-weight: bolder;
+  }
+  h3 {
+    @extend h2;
+    font-size: 1.1em;
+  }
+  .date {
+    font-style: italic;
+  }
+  #experience {
+    .row {
+      line-height: 25px;
+      padding: 1px;
+      .col-md-6 {
+        padding-left: 21%;
+        margin-right: -14%;
+      }
+    }
+  }
+  #pdfSkills {
+    display: none;
+  }
+  #pdfTitle {
+    font-size: 1em;
+    text-align: center;
+    display: none;
+    width: 100%;
+  }
+  #mobileContact {
+    display: none;
+  }
+}

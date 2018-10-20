@@ -1,0 +1,350 @@
+main {
+  font-family: pt sans, sans-serif;
+  font-size: 15px;
+  color: #444;
+  margin: 30px 150px 50px 320px;
+  text-align: left;
+  line-height: 20px;
+}
+main a {
+  color: #000;
+  text-decoration: none;
+}
+main a:hover {
+  color: #188355;
+  text-decoration: none;
+}
+main h1,
+main #sidebar h3,
+#sidebar main h3 {
+  font-weight: bolder;
+  font-size: 1.3em;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: uppercase;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  line-height: 35px;
+  color: #000;
+}
+main h1:after,
+main #sidebar h3:after,
+#sidebar main h3:after {
+  content: "";
+  margin-left: 10px;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+  overflow: hidden;
+  justify-content: space-around;
+}
+main h2,
+main h3 {
+  color: #000;
+  font-size: 2em;
+  font-weight: bolder;
+}
+main h3 {
+  font-size: 1.1em;
+}
+main .date {
+  font-style: italic;
+}
+main #experience .row {
+  line-height: 25px;
+  padding: 1px;
+}
+main #experience .row .col-md-6 {
+  padding-left: 21%;
+  margin-right: -14%;
+}
+main #pdfSkills {
+  display: none;
+}
+main #pdfTitle {
+  font-size: 1em;
+  text-align: center;
+  display: none;
+  width: 100%;
+}
+main #mobileContact {
+  display: none;
+}
+
+#sidebar {
+  font-family: pt sans, sans-serif;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 290px;
+  padding: 250px 10px 0 25px;
+  font-size: 12px;
+  background: #fff;
+  z-index: 1;
+}
+#sidebar a {
+  color: #000;
+  text-decoration: none;
+}
+#sidebar a:hover {
+  color: #188355;
+  text-decoration: none;
+}
+#sidebar ul li {
+  list-style: none;
+}
+#sidebar h1,
+#sidebar h3 {
+  color: #000;
+  font-size: 1.7em;
+  font-weight: bolder;
+  line-height: 0px;
+  text-transform: uppercase;
+}
+#sidebar h2,
+#sidebar main h3,
+main #sidebar h3 {
+  color: #555;
+  font-size: 1.1em;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+#sidebar h3 {
+  font-size: 130%;
+  text-align: left;
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: uppercase;
+  line-height: 35px;
+}
+#sidebar h3:after {
+  content: "";
+  margin-left: 10px;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+  overflow: hidden;
+  justify-content: space-around;
+}
+
+#sidebar h1 {
+  font-size: 130%;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-transform: uppercase;
+  line-height: 35px;
+}
+#sidebar h1:after {
+  content: "";
+  margin-left: 10px;
+  display: inline-block;
+  width: 100%;
+  vertical-align: middle;
+  border-bottom: 1px solid;
+  overflow: hidden;
+  justify-content: space-around;
+}
+#sidebar img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+}
+#sidebar .row {
+  overflow: auto;
+  vertical-align: top;
+  font-size: 1em;
+  margin: auto;
+  padding-left: 25px;
+}
+#sidebar .row .col-xs-1 {
+  display: inline;
+  padding: 13px 0px;
+}
+#sidebar .row .col-xs-1 img {
+  width: 18px;
+}
+#sidebar .row .col-xs-11 {
+  display: inline;
+}
+#sidebar #skills {
+  padding-right: 10px;
+}
+#sidebar #skills b {
+  font-style: none;
+  font-weight: bolder;
+  font-size: 1.1em;
+  color: #188355;
+}
+#sidebar #genPDF:hover {
+  color: #188355;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.projects {
+  margin: 20px;
+  margin-left: 20px;
+  display: block;
+}
+.projects .col-md-4 {
+  margin: auto;
+}
+.projects .col-md-8 {
+  padding-bottom: 40px;
+}
+.projects img {
+  opacity: 0.9;
+  padding: 5px;
+  width: 99.5%;
+  transition: width 0.3s;
+}
+.projects img:hover {
+  opacity: 1;
+  width: 100%;
+  cursor: pointer;
+}
+
+.projtoggle {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 25px;
+  margin-bottom: 40px;
+}
+.projtoggle:hover {
+  color: #188355;
+  cursor: pointer;
+}
+
+@media print {
+  #education {
+    margin-top: 20px;
+  }
+
+  #sidebar {
+    display: none;
+  }
+
+  .row {
+    display: none;
+  }
+
+  .projtoggle {
+    display: none;
+  }
+
+  #experience {
+    display: none;
+  }
+
+  main {
+    margin: 30px 20px;
+  }
+  main h1,
+  main #sidebar h3,
+  #sidebar main h3 {
+    margin-top: 5px;
+    padding-top: 0px;
+  }
+  main #pdfSkills {
+    display: inline-block;
+  }
+  main #pdfTitle {
+    font-size: 1.2em;
+    text-align: center;
+    display: inline-block;
+  }
+  main #pdfTitle h2,
+  main #pdfTitle h3 {
+    margin-top: 10px;
+    font-size: 1.7em;
+  }
+  main #pdfTitle h3 {
+    font-size: 1em;
+    margin: 2px;
+  }
+  main #pdfTitle .mobile-icon {
+    width: 5%;
+  }
+  main #pdfTitle #animation {
+    display: none;
+  }
+  main #pdfTitle #education {
+    page-break-after: always;
+  }
+  main #pdfTitle a[href]:after {
+    content: none !important;
+  }
+}
+@media only screen and (max-width: 780px) {
+  #sidebar {
+    display: none;
+  }
+
+  .row {
+    display: none;
+  }
+
+  .projtoggle {
+    display: none;
+  }
+
+  #experience {
+    display: none;
+  }
+
+  main {
+    margin: 20px 20px;
+  }
+  main #pdfSkills {
+    display: inline-block;
+  }
+  main #pdfTitle {
+    display: inline-block;
+    margin: 0px;
+  }
+  main #pdfTitle h2,
+  main #pdfTitle h3 {
+    font-size: 1.7em;
+    margin: 10px 2px 4px;
+  }
+  main #pdfTitle h3 {
+    font-size: 0.8em;
+    margin: 2px;
+  }
+  main h1,
+  main #sidebar h3,
+  #sidebar main h3 {
+    margin-top: 5px;
+    padding-top: 0px;
+  }
+
+  #animation {
+    width: 60%;
+  }
+
+  #summary {
+    padding-top: 0px;
+  }
+  #summary h1,
+  #summary #sidebar h3,
+  #sidebar #summary h3 {
+    margin-top: 0px;
+  }
+
+  .mobile-icon {
+    width: 5%;
+  }
+
+  #pdfSkills b {
+    font-weight: bolder;
+    color: #188355;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
