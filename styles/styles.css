@@ -1,230 +1,3 @@
-/* General Styles */
-main, #sidebar {
-  font-family: "PT Sans", sans-serif;
-  color: #444;
-}
-a {
-  text-decoration: none;
-}
-a:hover {
-  color: #188355;
-}
-
-/* Main Section */
-main {
-  font-size: 15px;
-  margin: 30px 150px 50px 320px;
-  text-align: left;
-  line-height: 20px;
-}
-main a {
-  color: #000;
-}
-main h1, main h2, main h3 {
-  color: #000;
-  font-weight: bolder;
-}
-main h1, main #sidebar h3, #sidebar main h3 {
-  font-size: 1.3em;
-  text-align: left;
-  overflow: hidden;
-  white-space: nowrap;
-  text-transform: uppercase;
-  padding: 20px 0 10px;
-  line-height: 35px;
-}
-main h1:after, main #sidebar h3:after, #sidebar main h3:after {
-  content: "";
-  margin-left: 10px;
-  display: inline-block;
-  width: 100%;
-  vertical-align: middle;
-  border-bottom: 1px solid;
-}
-main h2 {
-  font-size: 2em;
-}
-main h3 {
-  font-size: 1.1em;
-}
-main .date {
-  font-style: italic;
-}
-main #experience .row {
-  line-height: 25px;
-  padding: 1px;
-}
-main #experience .row .col-md-6 {
-  padding-left: 21%;
-  margin-right: -14%;
-}
-main #pdfSkills, main #pdfTitle, main #mobileContact {
-  display: none;
-}
-main #pdfTitle {
-  font-size: 1em;
-  text-align: center;
-  width: 100%;
-}
-
-/* Sidebar */
-#sidebar {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 290px;
-  padding: 250px 10px 0 25px;
-  font-size: 12px;
-  background: #fff;
-  z-index: 1;
-}
-#sidebar a {
-  color: #000;
-}
-#sidebar ul li {
-  list-style: none;
-}
-#sidebar h1, #sidebar h3 {
-  color: #000;
-  font-weight: bolder;
-  text-transform: uppercase;
-}
-#sidebar h1 {
-  font-size: 130%;
-  text-align: center;
-  line-height: 35px;
-}
-#sidebar h1:after, #sidebar h3:after {
-  content: "";
-  margin-left: 10px;
-  display: inline-block;
-  width: 100%;
-  vertical-align: middle;
-  border-bottom: 1px solid;
-}
-#sidebar h3 {
-  font-size: 130%;
-  text-align: left;
-  line-height: 35px;
-}
-#sidebar h2, #sidebar main h3, main #sidebar h3 {
-  color: #555;
-  font-size: 1.1em;
-  font-weight: normal;
-  margin-bottom: 30px;
-}
-#sidebar img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 90%;
-}
-#sidebar .row {
-  overflow: auto;
-  font-size: 1em;
-  margin: auto;
-  padding-left: 25px;
-}
-#sidebar .row .col-xs-1 {
-  display: inline;
-  padding: 13px 0;
-}
-#sidebar .row .col-xs-1 img {
-  width: 18px;
-}
-#sidebar .row .col-xs-11 {
-  display: inline;
-}
-#sidebar #skills {
-  padding-right: 10px;
-}
-#sidebar #skills b {
-  font-weight: bolder;
-  font-size: 1.1em;
-  color: #188355;
-}
-#sidebar #genPDF:hover {
-  color: #188355;
-  cursor: pointer;
-}
-
-/* Projects */
-.projects {
-  margin: 20px;
-  display: block;
-}
-.projects .col-md-4 {
-  margin: auto;
-}
-.projects .col-md-8 {
-  padding-bottom: 40px;
-}
-.projects img {
-  opacity: 0.9;
-  padding: 5px;
-  width: 99.5%;
-  transition: width 0.3s;
-}
-.projects img:hover {
-  opacity: 1;
-  width: 100%;
-  cursor: pointer;
-}
-
-/* Project Toggle */
-.projtoggle {
-  font-size: 1em;
-  font-weight: bold;
-  margin: 25px 0 40px;
-}
-.projtoggle:hover {
-  color: #188355;
-  cursor: pointer;
-}
-
-/* Print Styles */
-@media print {
-  #sidebar, .row, .projtoggle, #experience {
-    display: none;
-  }
-  main {
-    margin: 30px 20px;
-  }
-  main h1, main #sidebar h3, #sidebar main h3 {
-    margin-top: 5px;
-    padding-top: 0;
-  }
-  main #pdfSkills, main #pdfTitle {
-    display: inline-block;
-  }
-  main #pdfTitle {
-    font-size: 1.2em;
-    text-align: center;
-  }
-  main #pdfTitle h2, main #pdfTitle h3 {
-    margin-top: 10px;
-    font-size: 1.7em;
-  }
-  main #pdfTitle h3 {
-    font-size: 1em;
-    margin: 2px;
-  }
-  main #pdfTitle .mobile-icon {
-    width: 5%;
-  }
-  main #pdfTitle #animation {
-    display: none;
-  }
-  main #pdfTitle #education {
-    page-break-after: always;
-  }
-  main #pdfTitle a[href]:after {
-    content: none !important;
-  }
-}
-
-/* Mobile Styles */
 @media only screen and (max-width: 780px) {
   #sidebar, .row, .projtoggle, #experience {
     display: none;
@@ -237,10 +10,12 @@ main #pdfTitle {
   }
   main #pdfTitle {
     margin: 0;
+    text-align: center; /* Center titles */
   }
   main #pdfTitle h2, main #pdfTitle h3 {
     font-size: 1.7em;
     margin: 10px 2px 4px;
+    text-align: center; /* Center titles */
   }
   main #pdfTitle h3 {
     font-size: 0.8em;
@@ -249,6 +24,7 @@ main #pdfTitle {
   main h1, main #sidebar h3, #sidebar main h3 {
     margin-top: 5px;
     padding-top: 0;
+    text-align: center; /* Center titles */
   }
   #animation {
     width: 60%;
@@ -258,6 +34,7 @@ main #pdfTitle {
   }
   #summary h1, #summary #sidebar h3, #sidebar #summary h3 {
     margin-top: 0;
+    text-align: center; /* Center titles */
   }
   .mobile-icon {
     width: 5%;
