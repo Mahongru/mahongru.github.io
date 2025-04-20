@@ -1,4 +1,4 @@
-# Description
+## Description
 
 A personal website showcasing my work as a Software Engineer specializing in mobile and web development.
 
