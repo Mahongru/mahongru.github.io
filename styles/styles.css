@@ -223,7 +223,7 @@ main #sidebar h3 {
 
 @media print {
   #education {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
   #sidebar {
@@ -240,6 +240,7 @@ main #sidebar h3 {
 
   #experience {
     display: none;
+    padding-top: 10px;
   }
 
   main {
@@ -329,7 +330,7 @@ main #sidebar h3 {
   }
 
   #summary {
-    padding-top: 0px;
+    padding-top: 10px;
   }
   #summary h1,
   #summary #sidebar h3,
@@ -344,6 +345,7 @@ main #sidebar h3 {
   }
 
   #pdfSkills b {
+    margin-top: 10px;
     font-weight: bolder;
     color: #188355;
   }
