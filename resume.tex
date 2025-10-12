@@ -1,0 +1,204 @@
+\documentclass[11pt, letterpaper]{article}
+
+% --- Packages and settings ---
+\usepackage[
+    ignoreheadfoot,
+    top=1.5cm,
+    bottom=1.5cm,
+    left=1.5cm,
+    right=1.5cm,
+    footskip=0.5cm,
+]{geometry}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{primaryColor}{RGB}{0, 0, 0}
+\usepackage{enumitem}
+\usepackage{fontawesome5}
+\usepackage{amsmath}
+\usepackage[
+    pdftitle={Hongru Ma's CV},
+    pdfauthor={Hongru Ma},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref}
+\usepackage[pscoord]{eso-pic}
+\usepackage{calc}
+\usepackage{bookmark}
+\usepackage{lastpage}
+\usepackage{changepage}
+\usepackage{paracol}
+\usepackage{ifthen}
+\usepackage{needspace}
+\usepackage{iftex}
+
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage{charter}
+\usepackage[scaled=0.92]{helvet}
+
+\raggedright
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{0.15cm}
+\pagenumbering{gobble}
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\Large\sffamily}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.3cm}{0.2cm}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0.10cm,
+        parsep=0.10cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+}
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{0cm}{0cm}
+}{
+    \end{adjustwidth}
+}
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+}
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+}{
+    \par\kern\topsep
+}
+
+\begin{document}
+
+% --- HEADER ---
+\begin{header}
+    \fontsize{24pt}{24pt}\selectfont Hongru Ma
+
+    \vspace{5pt}
+
+    \normalsize
+    \kern 2.0pt%
+    \mbox{\href{mailto:mahongru.dev@gmail.com}{mahongru.dev@gmail.com}}%
+    \kern 2.0pt%
+    |%
+    \kern 2.0pt%
+    \mbox{\href{https://www.linkedin.com/in/mahongru/}{LinkedIn}}%
+    |%
+    \kern 2.0pt%
+    \mbox{\href{https://github.com/mahongru}{GitHub}}%
+    \kern 2.0pt%
+\end{header}
+
+\vspace{0.3cm}
+
+% --- SUMMARY ---
+\section{Summary}
+\vspace{0.1cm}
+Software Engineer experienced in building performant, cross-platform applications with refined UX. Passionate about delivering seamless digital experiences through thoughtful design and technical precision.
+\vspace{0.1cm}
+% --- EXPERIENCE ---
+\section{Work Experience}
+
+\textbf{Software Engineer}, Delfina Care — California, US \hfill 2022 – Present
+\vspace{0.1cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Build and maintain the next generation of digital pregnancy care through a robust Flutter mobile app.
+        \item Design scalable features using modular components and BLoC state management.
+        \item Implement deferred deep linking to streamline onboarding and boost user retention.
+        \item Collaborate with backend and design teams to refine UX and ensure cross-platform consistency.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.3cm}
+
+\textbf{Software Engineer}, Explore Agora — Cairo, Egypt \hfill 2020 – 2022
+\vspace{0.1cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Developed mobile learning applications that delivered engaging, interactive education experiences.
+        \item Architected reusable Flutter modules, improving scalability and reducing maintenance overhead.
+        \item Mentored junior engineers and led code reviews to ensure consistent development standards.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.3cm}
+
+\textbf{Software Engineer}, Rival Technologies — Vancouver, BC \hfill 2018 – 2019
+\vspace{0.1cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Built and maintained cloud services on GCP with high reliability and scalability.
+        \item Developed automated testing pipelines and integrated CI/CD workflows to accelerate releases.
+        \item Supported onboarding and strengthened team development processes.
+    \end{highlights}
+\end{onecolentry}
+
+\vspace{0.3cm}
+
+\textbf{Software Developer}, OpenLanguage — Vancouver, BC \hfill 2017
+\vspace{0.1cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Implemented new features for a language-learning platform using modern web technologies.
+        \item Optimized database queries and improved application performance.
+    \end{highlights}
+\end{onecolentry}
+\vspace{0.1cm}
+
+% --- LEADERSHIP ---
+\section{Leadership}
+\vspace{0.1cm}
+\begin{onecolentry}
+    \begin{highlights}
+        \item Led architecture reviews and cross-team technical discussions to align engineering direction.
+        \item Guided developers in improving technical proficiency and software design practices.
+        \item Promoted scalable architecture and robust testing to ensure long-term reliability.
+        \item Enhanced onboarding and documentation to accelerate developer productivity.
+    \end{highlights}
+\end{onecolentry}
+\vspace{0.1cm}
+% --- EDUCATION ---
+\section{Education}
+\vspace{0.1cm}
+\begin{twocolentry}{2016}
+    \textbf{Diploma in Web Development}, Lighthouse Labs
+\end{twocolentry}
+
+\begin{twocolentry}{2010}
+    \textbf{B.Sc. in General Management}, German University in Cairo
+\end{twocolentry}
+\vspace{0.1cm}
+% --- SKILLS ---
+\section{Skills}
+\vspace{0.1cm}
+\begin{onecolentry}
+    \textbf{Languages:} Dart, Python, JavaScript \\
+    \textbf{Frameworks:} Flutter, Firebase, Streamlit \\
+    \textbf{Tools:} Docker, GCP, Git, Terraform \\
+    \textbf{Testing:} TDD, mocking, unit, widget, and integration testing \\
+\end{onecolentry}
+
+\end{document}
